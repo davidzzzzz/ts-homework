@@ -1,0 +1,29 @@
+{
+  "name": "ts-homework",
+  "version": "1.0.0",
+  "description": "Project for TS homework",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/jest": "^16.0.1",
+    "typescript": "2.1.4"
+  },
+  "author": "David Z",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^17.0.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testRegex": "/src/__tests__/.*\\.(ts|tsx|js)$"
+  }
+}
